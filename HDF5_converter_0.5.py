@@ -120,13 +120,13 @@ for dir_it in range(len(all_dirs)):
 			
 			
 			# hdf_file = h5py.File(hdf5_path, 'w')
-			h = 1
+			h = 0
 			# hdf_file.open()
 			for h in range (k):
 				hdf5_name=str(all_dirs[dir_it])+'_%0*d' % (3, h+1)
-				hdf5_path = '/media/ivanwilliam/ivan/HDF5_file_0.5/'+str(hdf5_name)+'.h5'
+				hdf5_path = '/media/ivanwilliam/BINUS_DATA/HDF5_File/'+str(hdf5_name)+'.h5'
 				hdf_file = h5py.File(hdf5_path, 'w')
-				matrix123 = hdf32_list[h-1]
+				matrix123 = hdf32_list[h]
 				hdf_file.create_dataset(name='dataset', data=matrix123)
 				
 				hdf_check=h5py.File(hdf5_path, 'r')
@@ -139,5 +139,11 @@ for dir_it in range(len(all_dirs)):
 			    	# if h == k:
 			    	# 	hdf_file.close()
 			
-			# import IPython; IPython.embed()
+			import IPython; IPython.embed()
+		k = 0
+		h = 0
+		i = 1
+		hdf32_list=[]
+		pics32_list=[]
+		pics32_array=[]
 		dir_it=dir_it + 1
