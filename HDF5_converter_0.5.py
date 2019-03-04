@@ -139,7 +139,7 @@ for dir_it in range(len(all_dirs)):
 			    	# if h == k:
 			    	# 	hdf_file.close()
 			
-			import IPython; IPython.embed()
+			# import IPython; IPython.embed()
 		k = 0
 		h = 0
 		i = 1
