@@ -63,18 +63,18 @@ for dir_it in range(len(all_dirs)):
  #    print ('Searching: ACC = '+str(search_str)+' and slice = '+str(search_slice)+'.......')
 		if search_slice==z1_order==z2_order and acc_id == search_str:
 			print ('\tACC and z1, z2 order match found = '+str(search_str)+'.......')
-			csv_file.write(str(annot_file_path)+','+str(x1)+','+str(x2)+','+str(y1)+','+str(y2)+','+str(z1)+','+str(z2)+','+str(tipe)+'\n')
+			csv_file.write(str(annot_file_path)+','+str(x1)+','+str(y1)+','+str(x2)+','+str(y2)+','+str(z1)+','+str(z2)+','+str(tipe)+'\n')
 			p = p+1
 			i = i+1
 		else:
 			if search_slice==z2_order and acc_id==search_str:
 				print ('\tACC and z2 match found = '+str(search_str)+'.......')
-				csv_file.write(str(annot_file_path)+','+str(x1)+','+str(x2)+','+str(y1)+','+str(y2)+','+'0'+','+str(z2)+','+str(tipe)+'\n')
+				csv_file.write(str(annot_file_path)+','+str(x1)+','+str(y1)+','+str(x2)+','+str(y2)+','+'0'+','+str(z2)+','+str(tipe)+'\n')
 				p = p+1
 				i = i+1
 			if search_slice==z1_order and acc_id==search_str:
 				print ('\tACC and z1 match found = '+str(search_str)+'.......')
-				csv_file.write(str(annot_file_path)+','+str(x1)+','+str(x2)+','+str(y1)+','+str(y2)+','+str(z1)+','+'32'+','+str(tipe)+'\n')
+				csv_file.write(str(annot_file_path)+','+str(x1)+','+str(y1)+','+str(x2)+','+str(y2)+','+str(z1)+','+'32'+','+str(tipe)+'\n')
 				p = p+1
 				i = i+1
 			if p==0 and maxstopper==i:
