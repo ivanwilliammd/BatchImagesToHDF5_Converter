@@ -15,6 +15,8 @@ Interpolation of upsample used for upsampling are INTER_CUBIC
 Generated file size ratio  
 original_size : upsample_2x : upsample_4x = 1:4:16
 Archive image use zip from CLI (80% space compression)
+
+
 ```zip -r <zip_file_name> <folder_dir> Compression result will reduce >80% of file size```
 
 
