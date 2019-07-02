@@ -1,6 +1,6 @@
-# 32images_hdf5converter
+# Batch Images to HDF5 Converter
 
-This repo is used to compile 32 RGB images to 1 HDF5 file for CT scan/MRI images with size 512x512 px.
+This repo is used to compile 32 RGB images (JPG) to 1 HDF5 file for CT scan/MRI images with size 512x512 px, in order to feed 3D data to python generator
 
 If there are less than 32 images on last batch, it will takes last 32 images into 1 HDF5 file
 Interpolation of upsample used for upsampling are INTER_CUBIC
